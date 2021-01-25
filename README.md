@@ -6,6 +6,8 @@
 
 - 具備專案之新增、列表（index）功能。
 - 使用 Ajax 即時更新網頁內容：使用 jQuery Ajax 建立非同步請求，讓網頁能即時更新介面和內容，不需重新整理來讀取整個網頁，就能即時透過瀏覽器跟伺服器溝通，撈出資料，更快速地回應使用者的操作。
+- 使用 Middleware 檢驗 Http request: 原本在網址 http://127.0.0.1:8000/ ，會出現“ Unauthorized.404. Please edit the url as "http://127.0.0.1:8000/post?greeting=(the secret access string here)".”畫面。
+將網址修改為“http://127.0.0.1:8000/post?greeting=hi” 後便能通過 Middleware 檢驗，能進行下一個request。
 
 ### 未來功能規劃
 使用 laravel passport 或 JWT 完成用戶身份驗證的登錄和註冊。
