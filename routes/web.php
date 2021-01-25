@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
-
+use App\Http\Controllers\HomeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,8 +14,10 @@ use App\Http\Controllers\PostController;
 |
 */
 
-Route::get('/', [PostController::class, 'index']);
+Route::middleware('test')->get('/',[PostController::class, 'index']);
 
-Route::resource('post', PostController::class);
+Route::middleware('test')->get('/post', [HomeController::class,'test']);
+
+Route::resource('/post/access', PostController::class);
 
 

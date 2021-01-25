@@ -6,11 +6,11 @@
 
         <div class="d-flex bd-highlight mb-4">
             <div class="p-2 w-100 bd-highlight">
-                <h2>Laravel AJAX Example</h2>
+                <h2>Project List</h2>
             </div>
             <div class="p-2 flex-shrink-0 bd-highlight">
                 <button class="btn btn-success" id="btn-add">
-                    Add Todo
+                    Create Project
                 </button>
             </div>
         </div>
@@ -39,7 +39,7 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h4 class="modal-title" id="formModalLabel">Create Todo</h4>
+                            <h4 class="modal-title" id="formModalLabel">Create Project</h4>
                         </div>
                         <div class="modal-body">
                             <form id="myForm" name="myForm" class="form-horizontal" novalidate="">

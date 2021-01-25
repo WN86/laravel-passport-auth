@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PassportAuthController;
 use App\Http\Controllers\PostController;
+use App\Http\Middleware\EnsureTokenIsValid;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,3 +23,7 @@ use App\Http\Controllers\PostController;
 Route::middleware('auth:api')->group(function () {
     Route::resource('posts', PostController::class);
 });
+
+//Route::get('api/posts',function (){
+//    return view('home');
+//})->middleware('auth.basic');
