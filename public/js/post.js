@@ -33,7 +33,6 @@ jQuery(document).ready(function($){
                 var post = '<tr id="post' + data.post.id + '"><td>' + data.post.id + '</td><td>' + data.post.title + '</td><td>' + data.post.description + '</td></tr>';
                 if (state == "add") {
                     jQuery('#posts-list').append(post);
-                    console.log(post);
                 } else {
                     jQuery("#post" + post_id).replaceWith(post);
                 }
