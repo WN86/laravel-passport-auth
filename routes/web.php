@@ -16,8 +16,8 @@ use App\Http\Controllers\HomeController;
 
 Route::middleware('test')->get('/',[PostController::class, 'index']);
 
-Route::middleware('test')->get('/post', [HomeController::class,'test']);
+//Route::middleware('test')->get('/post', [HomeController::class,'test']);
 
-Route::resource('/post/access', PostController::class);
+Route::resource('/post', PostController::class);
 
 

@@ -19,7 +19,7 @@ class HomeController extends Controller
 
     public function test()
     {
-        return redirect('/post/access');
+        return redirect('/post');
     }
 }
 
